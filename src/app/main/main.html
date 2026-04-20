@@ -1,0 +1,23 @@
+<main>
+    <div class="overlay" [class.active]="open">
+        <div class="result">
+            <div class="result-content">
+                <h2>Resultado</h2>
+                <p>Aqui vai aparecer se o item é ou não vale a pena</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <h1>Worth It?</h1>
+        <div class="values">
+            <label for="work-hours">Horas trabalhadas no mês:</label>
+            <input type="number" class="work-hours">
+            <label for="work-hours">Salário mensal:</label>
+            <input type="text" class="salary" mask="separator.2" thousandSeparator="." decimalMarker="," prefix="R$ ">
+            <label for="item-price">Preço do item que quer avaliar:</label>
+            <input type="text" class="item-price" mask="separator.2" thousandSeparator="." decimalMarker="," prefix="R$ ">
+            <button class="evaluate-button" (click)="verify()">Avaliar</button>
+        </div>
+    </div>
+</main>
